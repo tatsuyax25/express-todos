@@ -1,7 +1,8 @@
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
 // Require the Todo model
-const todoDb = require('../models/todo');
+const Todo = require('../models/todo');
+const app = require('../server');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
